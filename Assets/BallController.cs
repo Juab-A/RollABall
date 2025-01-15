@@ -46,6 +46,8 @@ public class BallController : MonoBehaviour
     {
         RaycastHit hit;
         return Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance, groundLayer);
+        //Raycast that returns if the raycast has hit a gameobject of the Ground layer
+        //centered around the Sphere's position, looking straight down, using the RaycastHit, the distance of raycast, detecting ground layer
     }
 
     public void moveBall(Vector2 input) {
